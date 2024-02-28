@@ -1,15 +1,8 @@
 ---
 title: "Bar Charts - Diagramas de Barras"
-author: "Renzo Cáceres Rossi"
-date: "2022/06/15"
-output:
-  html_document:
-    toc: yes
-    toc_float: yes
-    code_download: yes
-  pdf_document:
-    toc: yes
-subtitle: RMarkdown - Markdown
+subtitle: "Python en RStudio"
+author: "Renzo Rossi Velasquez"
+date: "2024/03/01"
 ---
 
 ```{r setup,include=FALSE}

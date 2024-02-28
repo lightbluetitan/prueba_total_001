@@ -1,10 +1,8 @@
 ---
 title: "Diagramas de Barras - Bar Charts"
-author: "Filipa Cáceres Rossi"
-date: "2024/02/19"
-subtitle: Bar Charts
-phone: '51917337684'
-email: arenzocaceresrossi@gmail.com
+subtitle: "RMarkdown Bibliografía"
+author: "Renzo Cáceres Rossi"
+date: "2024/03/01"
 ---
 
 <!-- Añadir comentarios a nuestro documento RMarkdown - HTML Tags -->
@@ -70,15 +68,6 @@ barchart(x,xlab="Cilindros",ylab="Frecuencias",main="Número de Cilindros",col=c
 ```
 
 
-
-## YouTube - Tutorial
-
-Compartimos el siguiente tutorial tomado de la plataforma **YouTube** que muestra como crear diagramas de barras (**Bar Charts**) haciendo uso de la función `barplot()` y el paquete **ggplot2** del lenguaje de programación R, para añadir el vídeo utilizamos el paquete **vembedr**
-
-```{r video}
-embed_url("https://www.youtube.com/watch?v=EkxRj02iaLk&t=6s") %>% 
-  use_align("center")
-```
 
 
 
