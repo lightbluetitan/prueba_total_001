@@ -1,6 +1,6 @@
 ---
-title: "Diagramas de Barras - Bar Charts"
-subtitle: "RMarkdown Bibliografía"
+title: "Bar Charts"
+subtitle: "RMarkdown Bibliography"
 author: "Renzo Cáceres Rossi"
 date: "2024/03/01"
 ---
