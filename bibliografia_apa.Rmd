@@ -18,19 +18,6 @@ library(vembedr)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Diagramas de Barras - Bar Charts
-
-El diagrama de barras (**Bar Chart**) es un gráfico estadístico que nos permite representar la distribución de frecuencias de variables cualitativas y cuantitativas discretas; nuestro objetivo es pasar del lápiz y papel al uso de los lenguajes de programación R [@Rprogramming] y Python [@python38], para esto usamos como libro de cabezera **El Arte de Programar en R** [@santana2014arte],compartimos la siguiente imagen como referencia.
-
-<!-- RMarkdown permite añadir HTML tags dentro de su sintaxis para el formateo de nuestro documento -->
-
-<center>
-
-![](diagrama_barras_amano.jpg){width=400}
-
-</center>
-
-
 ## Data Set - mtcars
 
 **mtcars** es un data set que ya viene precargado al momento de instalar el **lenguaje de programación R** en nuestro sistema, haremos uso de dicho data set para la creación de distintos diagramas de barras, de las 11 variables y 32 observaciones que lo componen nos enfocaremos en las variables **cyl** (cilindro) y **gear** (engranajes) como se muestra a continuación.
