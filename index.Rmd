@@ -1,0 +1,70 @@
+---
+title: "Bar Charts"
+author: "Renzo Cáceres Rossi"
+date: "2024/03/01"
+subtitle: RMarkdown Bibliography
+---
+
+<!-- Añadir comentarios a nuestro documento RMarkdown - HTML Tags -->
+
+```{r setup,include=FALSE}
+
+library(ggplot2)
+
+library(lattice)
+
+library(vembedr)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data Set - mtcars
+
+**mtcars** es un data set que ya viene precargado al momento de instalar el **lenguaje de programación R** en nuestro sistema, haremos uso de dicho data set para la creación de distintos diagramas de barras, de las 11 variables y 32 observaciones que lo componen nos enfocaremos en las variables **cyl** (cilindro) y **gear** (engranajes) como se muestra a continuación.
+
+```{r mtcars}
+summary(mtcars)
+
+summary(mtcars$cyl)
+
+summary(mtcars$gear)
+
+```
+
+
+# Bar Charts
+
+Estamos trabajando con bar charts para mostrar el uso de **RMarkdown** en la publicación de documentos reproducibles. 
+
+
+## Bar Chart - ggplot2
+
+**ggplot2** [@ggplot2] es un paquete del lenguaje de programación que nos permite crear gráficos estadísticos de gran calidad, haremos uso de la variable cyl (**cilindros**) para la creación del gráfico estadístico respectivo, como se muestra a continuación.
+
+```{r ggplot2,fig.align='center'}
+colores <- c("orange","blue","purple")
+
+ggplot(mtcars,aes(cyl)) + geom_bar(fill=colores) + labs(x="Cillindros",y="Frecuencias",title="Número de Cilindros") + theme_dark()
+```
+
+
+## Bar Chart - Lattice
+
+**Lattice** [@lattice] es un paquete del lenguaje de programación R, que nos permite crear gráficos estadísticos de muy buena calidad, nos enfocaremos en la variable cyl (**cilindros**) para la creación del gráfico estadístico respectivo, como se muestra a continuación.
+
+```{r lattice,fig.align='center'}
+x <- table(mtcars$cyl)
+
+barchart(x,xlab="Cilindros",ylab="Frecuencias",main="Número de Cilindros",col=colores,horizontal=FALSE)
+```
+
+
+
+
+
+
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
+
+
+
